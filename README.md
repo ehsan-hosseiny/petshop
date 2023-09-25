@@ -29,3 +29,7 @@ To run migrate
 `php artisan passport:install`
 
 Postman apis already exists in postman folder
+
+for test run bellow command
+
+`php artisan test`
