@@ -24,7 +24,7 @@ To run generate key
 
 To run migrate
 
-`php artisan migrate`
+`php artisan migrate --seed`
 
 `php artisan passport:install`
 
