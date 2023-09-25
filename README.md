@@ -2,7 +2,7 @@
 
 `composer install`
 
-`docker-compose up -d`
+`docker compose up --build`
 
 
 Copy .env.example to make .env with below database configure
