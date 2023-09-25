@@ -15,12 +15,17 @@ Copy .env.example to make .env with below database configure
 `DB_PASSWORD=root`
 
 To run docker server
-docker-compose start
+
+`docker-compose start`
 
 To run generate key
-php artisan key:generate
+
+`php artisan key:generate`
 
 To run migrate
-php artisan migrate
+
+`php artisan migrate`
+
+`php artisan passport:install`
 
 Postman apis already exists in postman folder
