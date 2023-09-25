@@ -23,12 +23,13 @@ class ExampleTest extends TestCase
     /** @test */
     public function order_list_returns_paginated_data_with_ratings()
     {
+
         // Arrange
         $orderRepository = new OrderRepository();
 
         // Act
         $result = $orderRepository->orderList();
-dd($result->first());
+
 //        $this->assertInstanceOf(\Illuminate\Pagination\LengthAwarePaginator::class, $result);
         $this->assertTrue($result->first() instanceof Order);
         $this->assertTrue($result->first()->relationLoaded('ratings'));

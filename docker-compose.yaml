@@ -37,7 +37,7 @@ services:
     image: mysql:8.0.20
     restart: always
     volumes:
-      - ./storage/db-data:/var/lib/mysql
+      - mysql-data:/var/lib/mysql
     ports:
       - 3306:3306
     environment:
@@ -51,3 +51,5 @@ services:
 networks:
   app_network:
     driver: bridge
+volumes:
+  mysql-data:
